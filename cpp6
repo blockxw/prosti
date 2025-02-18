@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float p, r;
+    int t;
+    float res; 
+
+    cout << "Введіть значення p, r, t: ";
+    cin >> p >> r >> t;
+
+    res = (p * t * r) / 100;
+
+    cout << "Результат: " << res << endl;
+
+    return 0;
+}
