@@ -1,14 +1,15 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     int a, b;
 
-    std::cout << "2 числа: ";
+    std::cout << "Введіть два числа: ";
     std::cin >> a >> b;
 
-    std::cout << "Sum: " << (a + b) << std::endl;
-    std::cout << "Difference: " << (a - b) << std::endl;
-    std::cout << "Product: " << (a * b) << std::endl;
+    std::cout << "Сума: " << a + b << std::endl;
+    std::cout << "Добуток: " << a * b << std::endl;
+    std::cout << "Різниця: " << a - b << std::endl;
 
     return 0;
 }
