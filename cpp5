@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float pi = 3.14f;
+	int r;
+	cin>> r;
+	  cout<<"Довжина кола " << r*pi*2<<endl;
+	  cout<<"Площа круга " << pi*r*r<<endl;
+}
