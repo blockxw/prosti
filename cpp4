@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    cout << "Введіть висоту, ширину та довжину: ";
+    cin >> a >> b >> c;
+    
+    cout << "Об'єм: " << a * b * c << endl;
+    cout << "Повна поверхня: " << 2 * (a * b + b * c + a * c) << endl;
+
+    return 0;
+}
