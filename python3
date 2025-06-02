@@ -1,0 +1,19 @@
+import sys
+import datetime
+
+class logger:
+    def __init__(self, out_stream, time_formatter):
+        self.out_stream = out_stream
+        self.time_formatter = time_formatter
+
+    def log(self, message):
+        now = datetime.datetime.now()
+        time_str = now.strftime(self.time_formatter)
+        msg = "[" + time_str + "] " + message
+        print(msg, file=self.out_stream)
+
+out_stream = sys.stderr
+time_formatter = '%Y-%m-%d %H:%M:%S'
+logger = logger(out_stream, time_formatter)
+
+logger.log('message for logging')
